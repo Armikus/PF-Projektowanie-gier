@@ -1,7 +1,0 @@
-Project Iguana
-dungeon crawler z walką na karty
-lvl postaci(na run) dobieranie kart przy lvl upie
-walka na hp
-walka turowa
-Unity(c#)
-Pixel-art
