@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<id1>
+		<name>smash</name>
+		<image>smash</image>
+		<cost>1</cost>
+		<attack>1</attack>
+		<description>Deal 2 damage to a single enemy</description>
+	</id1>
+</root>
