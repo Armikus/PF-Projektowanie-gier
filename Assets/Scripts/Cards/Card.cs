@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "New Card", menuName="Cards/Card")]
 public class Card : ScriptableObject{
+    public int id;
     public new string name;
     public string description;
 
@@ -17,11 +18,9 @@ public class Card : ScriptableObject{
     {
         Text[] textFields = template.GetComponentsInChildren<Text>();
         for (int i = 0; i < textFields.Length; i++) {
-            Debug.Log(textFields[i].name);
             if (textFields[i].name == "Title")
             {
                 textFields[i].text = name;
-                Debug.Log(textFields[i].text = name);
             }
 
             else if (textFields[i].name == "Description")
@@ -32,6 +31,13 @@ public class Card : ScriptableObject{
             else if (textFields[i].name == "Cost") {
                 textFields[i].text = cost.ToString();
             }
+
+            else if (textFields[i].name == "Id")
+            {
+                textFields[i].text = id.ToString();
+            }
+
+
         }
 
 

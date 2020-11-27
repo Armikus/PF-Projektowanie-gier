@@ -1,6 +1,8 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class DragDrop : MonoBehaviour
 {
@@ -8,6 +10,21 @@ public class DragDrop : MonoBehaviour
     private bool isOverDropZone = false;
     private GameObject dropZone;
     private Vector2 startPosition;
+    private cardManager cardManager;
+    private int cardId;
+
+    void Start() {
+        GameObject gameManager = GameObject.Find("GameManager");
+        cardManager = gameManager.GetComponent<cardManager>();
+        setHoveredCardId();
+    }
+
+    void setHoveredCardId() {
+        Text[] textFields = gameObject.GetComponentsInChildren<Text>();
+        for (int i = 0; i < textFields.Length; i++) {
+            if (textFields[i].name == "Id") cardId = Int32.Parse(textFields[i].text);
+        }
+    }
 
     void Update()
     {
@@ -34,10 +51,16 @@ public class DragDrop : MonoBehaviour
     public void EndDrag() {
         isDragging = false;
         if (isOverDropZone){
-            //transform.SetParent(dropZone.transform, false);
-            Destroy(transform.gameObject);
-            Debug.Log("cost: 1");
-            Debug.Log("dmg: 2");
+           
+            if (cardManager.playCard(cardId)) { 
+                 Destroy(gameObject); 
+            }
+            else
+            {
+                Debug.Log("not enough stamina");
+                transform.position = startPosition;
+            }
+
         }
         else {
             transform.position = startPosition;

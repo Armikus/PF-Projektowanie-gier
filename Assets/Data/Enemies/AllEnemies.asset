@@ -9,12 +9,8 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 40ad096b3fcd38f4ebe0df78415287b8, type: 3}
-  m_Name: Test
+  m_Script: {fileID: 11500000, guid: 9735c14c26ab0254699d0acd9790cd89, type: 3}
+  m_Name: AllEnemies
   m_EditorClassIdentifier: 
-  id: 1
-  name: Test
-  description: Karta testowa(5 dmg)
-  artwork: {fileID: 21300000, guid: 16cb5c65b6449a04a951775142a9c4f3, type: 3}
-  cost: 2
-  damage: 5
+  enemies:
+  - {fileID: 11400000, guid: 0d0422caa72cfeb4cb76e0a517e774d0, type: 2}
