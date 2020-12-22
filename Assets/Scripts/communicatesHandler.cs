@@ -19,12 +19,15 @@ public class communicatesHandler : MonoBehaviour
 
     // FightPhaseCommunicationFade
     public void showCommunicate(string communicate) {
+		endTurnButton = GameObject.Find("EndTurn").GetComponent<Button>();
+        anim = gameObject.GetComponent<Animator>();
+        text = gameObject.GetComponent<Text>();
         if (!duringAnimation)
         {
             duringAnimation = true;
             text.text = communicate;
             anim.SetBool("fade", true);
-            endTurnButton.interactable = false;
+           endTurnButton.interactable = false;
         }
     }
 
