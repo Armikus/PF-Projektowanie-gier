@@ -12,13 +12,13 @@ public class communicatesHandler : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        endTurnButton = GameObject.Find("EndTurn").GetComponent<Button>();
-        anim = gameObject.GetComponent<Animator>();
-        text = gameObject.GetComponent<Text>();
     }
 
     // FightPhaseCommunicationFade
     public void showCommunicate(string communicate) {
+        endTurnButton = GameObject.Find("EndTurn").GetComponent<Button>();
+        anim = gameObject.GetComponent<Animator>();
+        text = gameObject.GetComponent<Text>();
         if (!duringAnimation)
         {
             duringAnimation = true;
