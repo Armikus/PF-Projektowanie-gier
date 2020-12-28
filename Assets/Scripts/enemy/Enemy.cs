@@ -11,7 +11,9 @@ public class Enemy : ScriptableObject
     public int minDmg;
     public int maxDmg;
 
-    public new string name;
+    public string name;
+
+    public GameObject prefab;
 
     public Sprite art;
 

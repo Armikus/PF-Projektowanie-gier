@@ -36,7 +36,7 @@ public class enemyControler : MonoBehaviour
     void showEnemies() {
         GameObject temp = null;
         for (int i = 0; i < enemiesOnBattlefied.Count; i++) { 
-            temp = Instantiate(Enemy, new Vector2(0,0), Quaternion.identity);
+            temp = Instantiate(enemiesOnBattlefied[i].prefab, new Vector2(0,0), Quaternion.identity);
             enemiesOnBattlefied[i].fillTemplate(temp);
 
             enemyStatsHandler tempHandler = temp.GetComponent<enemyStatsHandler>();
