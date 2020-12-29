@@ -15,9 +15,16 @@ public class enemyStatsHandler : MonoBehaviour
     private int minDmg;
     private int maxDmg;
 
+    private Animator animator;
+
     private Sprite art;
     private string name;
     private bool dead = false;
+
+
+    void Start() { 
+        animator = gameObject.GetComponentInChildren<Animator>();
+    }
 
     public void loadEnemyInformations() {
         Text[] idField = gameObject.GetComponentsInChildren<Text>();
@@ -79,17 +86,25 @@ public class enemyStatsHandler : MonoBehaviour
     }
 
     public int getDamage() {
+        playAttackAnimation();
         System.Random rng = new System.Random();
         return (rng.Next(minDmg, maxDmg));
+    }
+
+    private void playAttackAnimation() {
+        animator.SetBool("isAttacking", true);
     }
 
     private void die()
     {
         Debug.Log(name + " died");
         dead = true;
-        foreach (Transform child in gameObject.transform) {
+
+        animator.SetBool("isDead", true);
+
+        /*foreach (Transform child in gameObject.transform) {
             child.gameObject.SetActive(false);
-        }
+        }*/
 
         //Destroy(gameObject);
     }
@@ -98,5 +113,4 @@ public class enemyStatsHandler : MonoBehaviour
     {
         return dead;
     }
-
 }
