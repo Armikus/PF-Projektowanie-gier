@@ -6,17 +6,21 @@ public class playerHealthController : MonoBehaviour
 {
     private int healthInitial = 30;
     private int healthCurrent;
+    private int shieldCurrent = 5;
     // Start is called before the first frame update
 
     public void resetHealth() {
         healthCurrent = healthInitial;
+        shieldCurrent = 5;
     }
 
     public void TakeDamage(int damageAmount) {
-        healthCurrent -= damageAmount;
-        if (healthCurrent <= 0) {
-            Debug.Log("player is dead");
-        }
+        int damage = damageAmount - shieldCurrent;
+        if (damage > 0) healthCurrent -= damage;
+
+        shieldCurrent -= damageAmount;
+        if (shieldCurrent < 0) shieldCurrent = 0;
+        if (healthCurrent <= 0) Debug.Log("player is dead");      
     }
 
     public void Heal(int healAmount) {
@@ -32,6 +36,9 @@ public class playerHealthController : MonoBehaviour
     }
 
     public int getHealth() { return healthCurrent; }
+    public int getShield() { return shieldCurrent; }
+
+    public void addShield(int ammount) { shieldCurrent += ammount; }
     // Update is called once per frame
     void Update()
     {

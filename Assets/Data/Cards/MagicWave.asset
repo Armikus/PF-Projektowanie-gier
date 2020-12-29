@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 40ad096b3fcd38f4ebe0df78415287b8, type: 3}
-  m_Name: Test
+  m_Name: MagicWave
   m_EditorClassIdentifier: 
   id: 1
-  name: Test
-  description: Karta testowa(5 dmg)
+  name: Magic Wave
+  description: Send a huge dangerous magic wave that will hit all enemies for 3 dmg
   artwork: {fileID: 21300000, guid: 16cb5c65b6449a04a951775142a9c4f3, type: 3}
   cost: 2
-  damage: 5
+  damage: 3
+  type: 1

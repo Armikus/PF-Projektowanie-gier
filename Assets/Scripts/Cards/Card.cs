@@ -14,6 +14,8 @@ public class Card : ScriptableObject{
     public int cost;
     public int damage;
 
+    public short type;
+
     public void fillTemplate(GameObject template)
     {
         Text[] textFields = template.GetComponentsInChildren<Text>();

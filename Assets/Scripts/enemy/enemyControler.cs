@@ -55,26 +55,24 @@ public class enemyControler : MonoBehaviour
         else return true;
     }
 
-    public void takeDamage(int damage) {
+    public void takeDamage(int damage, bool singleTarget) {
         if (selectedTarget != null)
         {
-            if (enemiesHandlers[selectedTarget].takeDamage(damage))
+            if (singleTarget)
             {
-
-            }
-            else
-            {
-                deadEnemies++;
-                GameObject cursorArea = GameObject.Find("PointerArea");
-                if (deadEnemies < numberOfEnemies)
+                if (enemiesHandlers[selectedTarget].takeDamage(damage)){ }
+                else
                 {
-                    selectedTarget = enemiesHandlers.Find(c => c.isDead() == false).instanceId;
+                    deadEnemies++;
+                    selectNewTarget();
                 }
-                else selectedTarget = -1;
-
-                foreach (Transform child in cursorArea.transform)
-                {
-                    GameObject.Destroy(child.gameObject);
+            }
+            else {
+                foreach (enemyStatsHandler enemy in enemiesHandlers) {
+                    if (!enemy.takeDamage(damage)) {
+                        deadEnemies++;
+                        selectNewTarget();
+                    }
                 }
             }
         }
@@ -93,4 +91,17 @@ public class enemyControler : MonoBehaviour
         return enemiesHandlers[id].isDead();
     }
 
+    private void selectNewTarget() {
+        GameObject cursorArea = GameObject.Find("PointerArea");
+        if (deadEnemies < numberOfEnemies)
+        {
+            selectedTarget = enemiesHandlers.Find(c => c.isDead() == false).instanceId;
+        }
+        else selectedTarget = -1;
+
+        foreach (Transform child in cursorArea.transform)
+        {
+            GameObject.Destroy(child.gameObject);
+        }
+    }
 }

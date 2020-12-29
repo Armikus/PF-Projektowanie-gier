@@ -20,12 +20,6 @@ public class cardManager : MonoBehaviour
         enemyControler = GameObject.Find("GameManager").GetComponent<enemyControler>();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     public bool isCardPlayable(int cardId) {
         if (stamina.getStamina() < allCards.cardList[cardId].cost) return false;
         return true;
@@ -35,14 +29,44 @@ public class cardManager : MonoBehaviour
         Card playedCard = allCards.cardList[cardId];
         int cost = playedCard.cost;
         if (stamina.useStamina(cost)) {
+            /*
+             * CARD TYPES:
+             * 0 SINGLE TARGET DAMAGE
+             * 1 AOE DAMAGE
+             * 2 SHIELD
+             */
+            switch (playedCard.type) {
+                case 0: 
+                    dealSingleTargetDamage(playedCard.damage);
+                    break;
+                case 1:
+                    dealDamageToEveryone(playedCard.damage);
+                    break;
+                case 2:
+                    addShield(playedCard.damage);
+                    break;
+                default:
+                    dealSingleTargetDamage(playedCard.damage);
+                    break;
+            }
 
-            int damage = playedCard.damage;
-
-            enemyControler.takeDamage(damage);
             deckController.addToPlayed(playedCard.id);
 
             return true;
         }
         else return false;
+    }
+
+    private void dealSingleTargetDamage(int damage)
+    {
+        enemyControler.takeDamage(damage, true);
+    }
+
+    private void dealDamageToEveryone(int damage) {
+        enemyControler.takeDamage(damage, false);
+    }
+
+    private void addShield(int ammount) {
+        health.addShield(ammount);
     }
 }

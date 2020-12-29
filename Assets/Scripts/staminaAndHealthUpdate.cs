@@ -7,6 +7,7 @@ public class staminaAndHealthUpdate : MonoBehaviour
 
     public Text healthIndicator;
     public Text staminaIndicator;
+    public Text shieldIndicator;
 
     private playerStaminaControler stamina;
     private playerHealthController health;
@@ -23,5 +24,6 @@ public class staminaAndHealthUpdate : MonoBehaviour
     {
         healthIndicator.text = health.getHealth().ToString();
         staminaIndicator.text = stamina.getStamina().ToString();
+        shieldIndicator.text = health.getShield().ToString();
     }
 }
