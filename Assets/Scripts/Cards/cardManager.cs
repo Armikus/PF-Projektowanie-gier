@@ -26,6 +26,11 @@ public class cardManager : MonoBehaviour
         
     }
 
+    public bool isCardPlayable(int cardId) {
+        if (stamina.getStamina() < allCards.cardList[cardId].cost) return false;
+        return true;
+    }
+
     public bool playCard(int cardId) {
         Card playedCard = allCards.cardList[cardId];
         int cost = playedCard.cost;
