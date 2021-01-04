@@ -204,7 +204,7 @@ TextureImporter:
       name: dragon 3
       rect:
         serializedVersion: 2
-        x: 192
+        x: 64
         y: 192
         width: 64
         height: 64
@@ -246,7 +246,7 @@ TextureImporter:
       name: dragon 5
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 192
         width: 64
         height: 64
@@ -267,8 +267,8 @@ TextureImporter:
       name: dragon 6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 128
+        x: 256
+        y: 192
         width: 64
         height: 64
       alignment: 7
@@ -288,7 +288,7 @@ TextureImporter:
       name: dragon 7
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 128
         width: 64
         height: 64
@@ -309,7 +309,7 @@ TextureImporter:
       name: dragon 8
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 128
         width: 64
         height: 64
@@ -330,7 +330,7 @@ TextureImporter:
       name: dragon 9
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 128
         width: 64
         height: 64
@@ -351,7 +351,7 @@ TextureImporter:
       name: dragon 10
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 128
         width: 64
         height: 64
@@ -372,8 +372,8 @@ TextureImporter:
       name: dragon 11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 256
+        y: 128
         width: 64
         height: 64
       alignment: 7
@@ -393,7 +393,7 @@ TextureImporter:
       name: dragon 12
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 64
         width: 64
         height: 64
@@ -414,7 +414,7 @@ TextureImporter:
       name: dragon 13
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 64
         width: 64
         height: 64
@@ -435,7 +435,7 @@ TextureImporter:
       name: dragon 14
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 64
         width: 64
         height: 64
@@ -456,7 +456,7 @@ TextureImporter:
       name: dragon 15
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 64
         width: 64
         height: 64
@@ -477,8 +477,8 @@ TextureImporter:
       name: dragon 16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 256
+        y: 64
         width: 64
         height: 64
       alignment: 7
@@ -498,7 +498,7 @@ TextureImporter:
       name: dragon 17
       rect:
         serializedVersion: 2
-        x: 64
+        x: 0
         y: 0
         width: 64
         height: 64
@@ -519,7 +519,7 @@ TextureImporter:
       name: dragon 18
       rect:
         serializedVersion: 2
-        x: 128
+        x: 64
         y: 0
         width: 64
         height: 64
@@ -540,7 +540,7 @@ TextureImporter:
       name: dragon 19
       rect:
         serializedVersion: 2
-        x: 192
+        x: 128
         y: 0
         width: 64
         height: 64
@@ -561,7 +561,7 @@ TextureImporter:
       name: dragon 20
       rect:
         serializedVersion: 2
-        x: 256
+        x: 192
         y: 0
         width: 64
         height: 64
