@@ -5,10 +5,12 @@ using UnityEngine;
 public class MainMenuButton : MonoBehaviour
 {
     public void startNewGame() {
+        Application.LoadLevel(2);
         Debug.Log("Starting New Game");
     }
 
     public void continueGame() {
+        Application.LoadLevel(2);
         Debug.Log("Continue existing game");
     }
 

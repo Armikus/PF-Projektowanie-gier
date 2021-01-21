@@ -69,11 +69,13 @@ public class BattleSystem : MonoBehaviour
     void won() {
         Debug.Log("Battle finished - You Won");
         playerCommunication.showCommunicate("You Won");
+        Application.LoadLevel(2);
     }
 
     void lost() {
         Debug.Log("Battle finished - You Lost");
         playerCommunication.showCommunicate("Defeat");
+        Application.LoadLevel(0);
     }
 
 

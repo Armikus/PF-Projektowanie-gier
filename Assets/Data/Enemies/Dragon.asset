@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: Dragon
   m_EditorClassIdentifier: 
   id: 3
-  maxHp: 1
-  minDmg: 3
-  maxDmg: 3
+  maxHp: 10
+  minDmg: 5
+  maxDmg: 10
   name: Scary Dragon
   prefab: {fileID: 3192793952507761055, guid: 6256f9a9faa597544b653a84537dbe9d, type: 3}
   art: {fileID: -1780221592996460973, guid: 8c5df735a552ff34698c244192b60b5b, type: 3}
