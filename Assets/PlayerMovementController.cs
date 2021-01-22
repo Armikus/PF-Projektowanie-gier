@@ -18,6 +18,8 @@ public class PlayerMovementController : MonoBehaviour
     public int encounterChance = 25;
     public int encounterQuantity = 10;
 
+
+    private Animator anim;
     private System.Random rng;
 
     void Start()
@@ -25,6 +27,7 @@ public class PlayerMovementController : MonoBehaviour
         GlobalData = GameObject.Find("GlobalData").GetComponent<GlobalController>();
         transform.position = GlobalData.getPlayerPosition();
         Camera.transform.position = GlobalData.getCameraPosition();
+        anim = gameObject.GetComponentInChildren<Animator>();
         rng = new System.Random();
         movementPoint.parent = null;
 
@@ -35,6 +38,7 @@ public class PlayerMovementController : MonoBehaviour
     {
         if (hasMoved) {
             hasMoved = false;
+            anim.SetBool("isMoving", true);
             if (encounterIterator >= encounterQuantity) {
                 encounterIterator = 0;
                 if (rng.Next(101) < encounterChance) {
@@ -74,4 +78,5 @@ public class PlayerMovementController : MonoBehaviour
     public void savePositionToGlobal() {
         GlobalData.SavePosition(transform.position);
     }
+
 }
