@@ -22,6 +22,9 @@ public class enemyControler : MonoBehaviour
         deadEnemies = 0;
         EnemyArea = GameObject.Find("EnemyArea");
         selectedTarget = 0;
+    }
+
+    public void startBattle() {
         selectEnemiesForBattle();
         showEnemies();
     }
@@ -103,5 +106,14 @@ public class enemyControler : MonoBehaviour
         {
             GameObject.Destroy(child.gameObject);
         }
+    }
+
+    public List<Enemy> getEnemies() {
+        return enemiesOnBattlefied;
+    }
+
+    public void setEnemiesOnBattlefield(List<Enemy> enemies) {
+        enemiesOnBattlefied = enemies;
+        showEnemies();
     }
 }

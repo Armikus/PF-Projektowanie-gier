@@ -11,6 +11,7 @@ public class PlayerMovementController : MonoBehaviour
     public LayerMask collisonsMask;
 
     public GameObject Camera;
+    public GlobalController GlobalData;
 
     private bool hasMoved = false;
     private int encounterIterator = 0;
@@ -21,8 +22,13 @@ public class PlayerMovementController : MonoBehaviour
 
     void Start()
     {
+        GlobalData = GameObject.Find("GlobalData").GetComponent<GlobalController>();
+        transform.position = GlobalData.getPlayerPosition();
+        Camera.transform.position = GlobalData.getCameraPosition();
         rng = new System.Random();
         movementPoint.parent = null;
+
+        GlobalData.setInFightState(false);
     }
 
     void Update()
@@ -32,6 +38,7 @@ public class PlayerMovementController : MonoBehaviour
             if (encounterIterator >= encounterQuantity) {
                 encounterIterator = 0;
                 if (rng.Next(101) < encounterChance) {
+                    savePositionToGlobal();
                     Application.LoadLevel(1);
                 }
             }
@@ -62,5 +69,9 @@ public class PlayerMovementController : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void savePositionToGlobal() {
+        GlobalData.SavePosition(transform.position);
     }
 }

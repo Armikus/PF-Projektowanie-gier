@@ -7,11 +7,23 @@ public class PauseMenuButton : MonoBehaviour
 
     private PauseManager pauseMenu;
 
+    public GlobalController GlobalData;
+
+
+
     public void Awake() {
+        GlobalData = GameObject.Find("GlobalData").GetComponent<GlobalController>();
         pauseMenu = GameObject.Find("Pause").GetComponent<PauseManager>();
     }
 
     public void buttonQuit() {
+        if (GlobalData.getFightState())
+        {
+            GameObject.Find("GameManager").GetComponent<BattleSystem>().saveFightState();
+        }
+        else {
+            GameObject.Find("Player").GetComponent<PlayerMovementController>().savePositionToGlobal();
+        }
         Application.LoadLevel(0);
     }
 

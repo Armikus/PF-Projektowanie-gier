@@ -15,20 +15,33 @@ public class BattleSystem : MonoBehaviour
     private playerDeckControler cardController;
     private communicatesHandler playerCommunication;
 
+    public GlobalController GlobalData;
+
     void Start()
     {
+        GlobalData = GameObject.Find("GlobalData").GetComponent<GlobalController>();
         playerHealth = GameObject.Find("Player").GetComponent<playerHealthController>();
         playerStamina = GameObject.Find("Player").GetComponent<playerStaminaControler>();
         cardController = GameObject.Find("Player").GetComponent<playerDeckControler>();
         playerCommunication = GameObject.Find("Communicate").GetComponent<communicatesHandler>();
 
+        GlobalData.setInFightState(true);
+
         enemies = GameObject.Find("GameManager").GetComponent<enemyControler>();
+
+        playerHealth.setStartHealth(GlobalData.getPlayerHealth());
 
         state = BattleState.START;
         SetupBattle();
     }
 
     void SetupBattle() {
+        if (GlobalData.getBattleContinuation())
+        {
+            enemies.setEnemiesOnBattlefield(GlobalData.getEnemies());
+        }
+        else enemies.startBattle();
+
         state = BattleState.PLAYERTURN;
         playerHealth.resetHealth();
         cardController.initialize();
@@ -69,15 +82,24 @@ public class BattleSystem : MonoBehaviour
     void won() {
         Debug.Log("Battle finished - You Won");
         playerCommunication.showCommunicate("You Won");
+        GlobalData.SaveHp(playerHealth.getHealth());
+        GlobalData.setBattleContinuation(false);
         Application.LoadLevel(2);
     }
 
     void lost() {
         Debug.Log("Battle finished - You Lost");
         playerCommunication.showCommunicate("Defeat");
+        GlobalData.resetGlobalData();
         Application.LoadLevel(0);
     }
 
+
+    public void saveFightState() {
+        GlobalData.saveEnemies(enemies.getEnemies());
+        GlobalData.setBattleContinuation(true);
+        GlobalData.SaveHp(playerHealth.getHealth());
+    }
 
     void Update()
     {
@@ -91,10 +113,5 @@ public class BattleSystem : MonoBehaviour
                 }
             }
         }
-       /* if (playerStamina.getStamina() == 0)
-        {
-            playerStamina.ResetStamina();
-            endPlayerTurn();
-        }*/
     }
 }

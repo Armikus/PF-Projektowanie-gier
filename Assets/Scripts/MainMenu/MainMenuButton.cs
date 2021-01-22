@@ -4,13 +4,23 @@ using UnityEngine;
 
 public class MainMenuButton : MonoBehaviour
 {
+    public GlobalController GlobalData;
+
+    void Start() {
+        GlobalData = GameObject.Find("GlobalData").GetComponent<GlobalController>();
+    }
+
     public void startNewGame() {
+        GlobalData.resetGlobalData();
         Application.LoadLevel(2);
         Debug.Log("Starting New Game");
     }
 
     public void continueGame() {
-        Application.LoadLevel(2);
+        if (GlobalData.getBattleContinuation()) {
+            Application.LoadLevel(1);
+        }
+        else Application.LoadLevel(2);
         Debug.Log("Continue existing game");
     }
 

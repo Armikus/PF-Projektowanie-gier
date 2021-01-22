@@ -6,12 +6,12 @@ public class playerHealthController : MonoBehaviour
 {
     private int healthInitial = 30;
     private int healthCurrent;
-    private int shieldCurrent = 5;
+    private int shieldCurrent;
     // Start is called before the first frame update
 
     public void resetHealth() {
         healthCurrent = healthInitial;
-        shieldCurrent = 5;
+        shieldCurrent = 0;
     }
 
     public void TakeDamage(int damageAmount) {
@@ -37,6 +37,11 @@ public class playerHealthController : MonoBehaviour
 
     public int getHealth() { return healthCurrent; }
     public int getShield() { return shieldCurrent; }
+
+    public void setStartHealth( int value) {
+        this.healthCurrent = value;
+        this.healthInitial = value;
+    }
 
     public void addShield(int ammount) { shieldCurrent += ammount; }
     // Update is called once per frame

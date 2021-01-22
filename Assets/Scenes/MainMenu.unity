@@ -199,6 +199,49 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 521457580}
   m_CullTransparentMesh: 0
+--- !u!1 &578770332
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 578770334}
+  - component: {fileID: 578770333}
+  m_Layer: 0
+  m_Name: GlobalData
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &578770333
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578770332}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 44234be09d8767443a0574d67a9b5094, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &578770334
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 578770332}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -4.974006, y: 14.710438, z: -1336.9832}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &655548402
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,6 +692,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d479a8d524350ea4088324817970c7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GlobalData: {fileID: 0}
 --- !u!1 &940297197
 GameObject:
   m_ObjectHideFlags: 0
@@ -701,6 +745,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d479a8d524350ea4088324817970c7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GlobalData: {fileID: 0}
 --- !u!114 &940297200
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -943,6 +988,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d479a8d524350ea4088324817970c7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GlobalData: {fileID: 0}
 --- !u!114 &1117979191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1086,6 +1132,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d479a8d524350ea4088324817970c7a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GlobalData: {fileID: 0}
 --- !u!114 &1421482612
 MonoBehaviour:
   m_ObjectHideFlags: 0
