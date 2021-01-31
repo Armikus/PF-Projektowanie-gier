@@ -15,7 +15,8 @@ public class GlobalController : MonoBehaviour
 
     private bool battleContinuation;
 
-    // Start is called before the first frame update
+    private bool bossFight;
+
     void Start()
     {
         if (Instance == null)
@@ -51,6 +52,9 @@ public class GlobalController : MonoBehaviour
     public List<Enemy> getEnemies() { return GlobalController.Instance.enemies; }
     public void saveEnemies(List<Enemy> enemies) { GlobalController.Instance.enemies = enemies; }
 
+    public bool isBossFight() { return GlobalController.Instance.bossFight; }
+    public void setBossFightStatus(bool value) { GlobalController.Instance.bossFight = value; }
+
     public void resetGlobalData() {
         hp = 30;
         position = new Vector3(-2.5f, 1.1f, 0f);
@@ -58,6 +62,7 @@ public class GlobalController : MonoBehaviour
         inFight = false;
         enemies = null;
         battleContinuation = false;
+        bossFight = false;
     }
 
 }

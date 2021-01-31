@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Slime
   m_EditorClassIdentifier: 
   id: 0
-  maxHp: 5
+  maxHp: 1
   minDmg: 2
   maxDmg: 5
   name: Slime
   prefab: {fileID: 4070299707823827483, guid: e1150f8c6323d3d4089b467dd029c191, type: 3}
   art: {fileID: 21300000, guid: 5809b8ac63a8a6549bc6b6f462ac0d23, type: 3}
+  isBoss: 0

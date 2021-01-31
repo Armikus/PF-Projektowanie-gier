@@ -44,10 +44,10 @@ public class playerDeckControler : MonoBehaviour
         Card temp;
         for (int i = 0; i < handSize; i++)
         {
-            playerCard = Instantiate(Card, new Vector3(0, 0, 0), Quaternion.identity);
             temp = drawCard();
             if (temp != null)
             {
+                playerCard = Instantiate(Card, new Vector3(0, 0, 0), Quaternion.identity);
                 temp.fillTemplate(playerCard);
 
                 cardsPrefabs.Add(playerCard);
@@ -59,12 +59,18 @@ public class playerDeckControler : MonoBehaviour
 
     private Card drawCard() {
         Card temp = null;
-        if (cardsAvaiable.Count >= 1) {
+        if (cardsAvaiable.Count >= 1)
+        {
             int id = Random.Range(0, cardsAvaiable.Count);
             temp = cardsAvaiable[id];
 
             removeFromAvaiable(temp.id);
             addToHand(temp.id);
+        }
+        else
+        {
+            Debug.Log("Brak kart");
+            Application.LoadLevel(4);
         }
         return temp;
     }

@@ -13,9 +13,10 @@ MonoBehaviour:
   m_Name: Slime_blue
   m_EditorClassIdentifier: 
   id: 1
-  maxHp: 12
+  maxHp: 1
   minDmg: 1
   maxDmg: 2
   name: Mana Slime
   prefab: {fileID: 6185734462349794127, guid: cccea1b1ccc4a584a8812af9a23e78af, type: 3}
   art: {fileID: 4152826089768253390, guid: a16fdd1a2c4ed8840a8dd9a560db8168, type: 3}
+  isBoss: 0

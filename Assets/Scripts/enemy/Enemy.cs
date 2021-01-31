@@ -17,6 +17,7 @@ public class Enemy : ScriptableObject
 
     public Sprite art;
 
+    public bool isBoss = false;
 
     public void fillTemplate(GameObject template)
     {

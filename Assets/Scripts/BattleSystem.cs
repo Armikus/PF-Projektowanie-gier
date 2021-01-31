@@ -36,7 +36,12 @@ public class BattleSystem : MonoBehaviour
     }
 
     void SetupBattle() {
-        if (GlobalData.getBattleContinuation())
+
+        if (GlobalData.isBossFight()) 
+        {
+            enemies.setBossOnBattlefield();
+        }
+        else if (GlobalData.getBattleContinuation())
         {
             enemies.setEnemiesOnBattlefield(GlobalData.getEnemies());
         }
@@ -81,17 +86,27 @@ public class BattleSystem : MonoBehaviour
 
     void won() {
         Debug.Log("Battle finished - You Won");
-        playerCommunication.showCommunicate("You Won");
-        GlobalData.SaveHp(playerHealth.getHealth());
-        GlobalData.setBattleContinuation(false);
-        Application.LoadLevel(2);
+        if (GlobalData.isBossFight())
+        {
+            playerCommunication.showCommunicate("Congratulations! You Finished the game!");
+            Debug.Log("Congratulations! You Finished the game!");
+            GlobalData.setBattleContinuation(false);
+            GlobalData.resetGlobalData();
+            Application.LoadLevel(3);
+        }
+        else {
+            playerCommunication.showCommunicate("You Won");
+            GlobalData.SaveHp(playerHealth.getHealth());
+            GlobalData.setBattleContinuation(false);
+            Application.LoadLevel(2);
+        }
     }
 
     void lost() {
         Debug.Log("Battle finished - You Lost");
         playerCommunication.showCommunicate("Defeat");
         GlobalData.resetGlobalData();
-        Application.LoadLevel(0);
+        Application.LoadLevel(4);
     }
 
 

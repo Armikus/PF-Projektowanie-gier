@@ -32,7 +32,9 @@ public class enemyControler : MonoBehaviour
     void selectEnemiesForBattle() { 
         numberOfEnemies = Random.Range(1, 4);
         for (int i = 0; i < numberOfEnemies; i++) {
-            enemiesOnBattlefied.Add(allEnemies.enemies[Random.Range(0, allEnemies.enemies.Count)]);
+            Enemy temp = allEnemies.enemies[Random.Range(0, allEnemies.enemies.Count)];
+            if (!temp.isBoss) enemiesOnBattlefied.Add(temp);
+            else i--;
         }
     }
 
@@ -54,7 +56,7 @@ public class enemyControler : MonoBehaviour
     }
 
     public bool thereAreEnemiesLeft() {
-        if (deadEnemies == numberOfEnemies) return false;
+        if (deadEnemies >= numberOfEnemies) return false;
         else return true;
     }
 
@@ -114,6 +116,14 @@ public class enemyControler : MonoBehaviour
 
     public void setEnemiesOnBattlefield(List<Enemy> enemies) {
         enemiesOnBattlefied = enemies;
+        numberOfEnemies = enemies.Count;
+        showEnemies();
+    }
+
+    public void setBossOnBattlefield() {
+        enemiesOnBattlefied.Add(allEnemies.enemies[4]);
+        numberOfEnemies = 1;
+        Debug.Log(allEnemies.enemies[4].name);
         showEnemies();
     }
 }

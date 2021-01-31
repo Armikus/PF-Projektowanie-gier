@@ -9,6 +9,7 @@ public class PlayerMovementController : MonoBehaviour
     public Transform movementPoint;
 
     public LayerMask collisonsMask;
+    public LayerMask bossMask;
 
     public GameObject Camera;
     public GlobalController GlobalData;
@@ -57,7 +58,10 @@ public class PlayerMovementController : MonoBehaviour
 
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movementPoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, collisonsMask))
+                if (Physics2D.OverlapCircle(movementPoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, bossMask)) {
+                    startBossFight();
+                }
+                else if (!Physics2D.OverlapCircle(movementPoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, collisonsMask))
                 {
                     movementPoint.position += new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f);
                     hasMoved = true;
@@ -66,7 +70,10 @@ public class PlayerMovementController : MonoBehaviour
 
             else if (Mathf.Abs(Input.GetAxisRaw("Vertical")) == 1f)
             {
-                if (!Physics2D.OverlapCircle(movementPoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, collisonsMask))
+                if (Physics2D.OverlapCircle(movementPoint.position + new Vector3(Input.GetAxisRaw("Horizontal"), 0f, 0f), .2f, bossMask)){
+                    startBossFight();
+                }
+                else if (!Physics2D.OverlapCircle(movementPoint.position + new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f), .2f, collisonsMask))
                 {
                     movementPoint.position += new Vector3(0f, Input.GetAxisRaw("Vertical"), 0f);
                     hasMoved = true;
@@ -79,4 +86,11 @@ public class PlayerMovementController : MonoBehaviour
         GlobalData.SavePosition(transform.position);
     }
 
+
+    private void startBossFight() {
+        savePositionToGlobal();
+        Debug.Log("BossFight");
+        GlobalData.setBossFightStatus(true);
+        Application.LoadLevel(1);
+    }
 }
