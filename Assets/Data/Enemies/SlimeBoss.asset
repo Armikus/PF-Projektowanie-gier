@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d933b400fe6739f4295ab069d6b8c1a5, type: 3}
+  m_Name: SlimeBoss
+  m_EditorClassIdentifier: 
+  id: 4
+  maxHp: 40
+  minDmg: 1
+  maxDmg: 10
+  name: King Of Slimes
+  prefab: {fileID: 75004149832307722, guid: 8ce5f537896b4f84fbaa4b29a734a4d6, type: 3}
+  art: {fileID: -8066617757591839142, guid: 433ab7588c927584f9dea811e301f85f, type: 3}
+  isBoss: 1
