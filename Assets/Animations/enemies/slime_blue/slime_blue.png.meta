@@ -56,6 +56,30 @@ TextureImporter:
   - first:
       213: -7254954007748951712
     second: slime_blue 17
+  - first:
+      213: -1307237257036235789
+    second: slime_blue 18
+  - first:
+      213: -1600708202370189339
+    second: slime_blue 19
+  - first:
+      213: 2278737501533404153
+    second: slime_blue 20
+  - first:
+      213: -7031678807422621791
+    second: slime_blue 21
+  - first:
+      213: 8289050240989574719
+    second: slime_blue 22
+  - first:
+      213: -4738906654126483477
+    second: slime_blue 23
+  - first:
+      213: -7248181936252123383
+    second: slime_blue 24
+  - first:
+      213: -8567224997444908449
+    second: slime_blue 25
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +139,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 160
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -133,7 +157,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -154,7 +178,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -175,7 +199,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -196,7 +220,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -216,8 +240,8 @@ TextureImporter:
       name: slime_blue 4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -237,8 +261,8 @@ TextureImporter:
       name: slime_blue 5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -258,8 +282,8 @@ TextureImporter:
       name: slime_blue 6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -280,7 +304,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -301,7 +325,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -321,8 +345,8 @@ TextureImporter:
       name: slime_blue 9
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -342,8 +366,8 @@ TextureImporter:
       name: slime_blue 10
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -363,8 +387,8 @@ TextureImporter:
       name: slime_blue 11
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -384,8 +408,8 @@ TextureImporter:
       name: slime_blue 12
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 128
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -405,8 +429,8 @@ TextureImporter:
       name: slime_blue 13
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 7
@@ -426,8 +450,8 @@ TextureImporter:
       name: slime_blue 14
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 7
@@ -447,8 +471,8 @@ TextureImporter:
       name: slime_blue 15
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 7
@@ -468,8 +492,8 @@ TextureImporter:
       name: slime_blue 16
       rect:
         serializedVersion: 2
-        x: 32
-        y: 0
+        x: 96
+        y: 64
         width: 32
         height: 32
       alignment: 7
@@ -481,6 +505,195 @@ TextureImporter:
       bones: []
       spriteID: 9df9bc47526dfc080800000000000000
       internalID: -9164871260314034215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_blue 17
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 061c352b4c9315b90800000000000000
+      internalID: -7254954007748951712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_blue 18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3fbf23904a2cbdde0800000000000000
+      internalID: -1307237257036235789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_blue 19
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e7bba0fe5429c9e0800000000000000
+      internalID: -1600708202370189339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_blue 20
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9fb72433fa3bf9f10800000000000000
+      internalID: 2278737501533404153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_blue 21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a7aeec41657a6e90800000000000000
+      internalID: -7031678807422621791
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_blue 22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f36bc83e64f980370800000000000000
+      internalID: 8289050240989574719
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_blue 23
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be75e0181850c3eb0800000000000000
+      internalID: -4738906654126483477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_blue 24
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9070a467ee8496b90800000000000000
+      internalID: -7248181936252123383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_blue 25
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5a0374814a1b1980800000000000000
+      internalID: -8567224997444908449
       vertices: []
       indices: 
       edges: []

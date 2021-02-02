@@ -56,6 +56,30 @@ TextureImporter:
   - first:
       213: -5244050379475909061
     second: slime_red 17
+  - first:
+      213: -1123249536883530366
+    second: slime_red 18
+  - first:
+      213: -8695218723571568150
+    second: slime_red 19
+  - first:
+      213: 1250433540710728637
+    second: slime_red 20
+  - first:
+      213: -317702460371829925
+    second: slime_red 21
+  - first:
+      213: 8196892047970661789
+    second: slime_red 22
+  - first:
+      213: -5903898280408134820
+    second: slime_red 23
+  - first:
+      213: -6606600986744259543
+    second: slime_red 24
+  - first:
+      213: 5772337369491267843
+    second: slime_red 25
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -115,7 +139,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 128
+    maxTextureSize: 160
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
@@ -133,7 +157,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -154,7 +178,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -175,7 +199,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -196,7 +220,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -216,8 +240,8 @@ TextureImporter:
       name: slime_red 4
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -237,8 +261,8 @@ TextureImporter:
       name: slime_red 5
       rect:
         serializedVersion: 2
-        x: 32
-        y: 64
+        x: 0
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -258,8 +282,8 @@ TextureImporter:
       name: slime_red 6
       rect:
         serializedVersion: 2
-        x: 0
-        y: 64
+        x: 128
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -280,7 +304,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 96
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -301,7 +325,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 64
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -322,7 +346,7 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 32
-        y: 96
+        y: 128
         width: 32
         height: 32
       alignment: 7
@@ -342,8 +366,8 @@ TextureImporter:
       name: slime_red 10
       rect:
         serializedVersion: 2
-        x: 64
-        y: 64
+        x: 32
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -363,8 +387,8 @@ TextureImporter:
       name: slime_red 11
       rect:
         serializedVersion: 2
-        x: 96
-        y: 64
+        x: 64
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -384,8 +408,8 @@ TextureImporter:
       name: slime_red 12
       rect:
         serializedVersion: 2
-        x: 0
-        y: 32
+        x: 96
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -405,8 +429,8 @@ TextureImporter:
       name: slime_red 13
       rect:
         serializedVersion: 2
-        x: 32
-        y: 32
+        x: 128
+        y: 96
         width: 32
         height: 32
       alignment: 7
@@ -426,8 +450,8 @@ TextureImporter:
       name: slime_red 14
       rect:
         serializedVersion: 2
-        x: 64
-        y: 32
+        x: 0
+        y: 64
         width: 32
         height: 32
       alignment: 7
@@ -447,8 +471,8 @@ TextureImporter:
       name: slime_red 15
       rect:
         serializedVersion: 2
-        x: 96
-        y: 32
+        x: 32
+        y: 64
         width: 32
         height: 32
       alignment: 7
@@ -468,8 +492,8 @@ TextureImporter:
       name: slime_red 16
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
+        x: 64
+        y: 64
         width: 32
         height: 32
       alignment: 7
@@ -481,6 +505,195 @@ TextureImporter:
       bones: []
       spriteID: bbceeade7b9920200800000000000000
       internalID: 144847153275006139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_red 17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b36061bc6f36937b0800000000000000
+      internalID: -5244050379475909061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_red 18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2856fe75f7a6960f0800000000000000
+      internalID: -1123249536883530366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_red 19
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ae1f031e3a0645780800000000000000
+      internalID: -8695218723571568150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_red 20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db30c412eae6a5110800000000000000
+      internalID: 1250433540710728637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_red 21
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b5bf449ab4b479bf0800000000000000
+      internalID: -317702460371829925
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_red 22
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d95f38d73e531c170800000000000000
+      internalID: 8196892047970661789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_red 23
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5bcb3e4bc3211ea0800000000000000
+      internalID: -5903898280408134820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_red 24
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 92cfc54e763a054a0800000000000000
+      internalID: -6606600986744259543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: slime_red 25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 32
+        height: 32
+      alignment: 7
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3016d3021467b1050800000000000000
+      internalID: 5772337369491267843
       vertices: []
       indices: 
       edges: []
