@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4402221212526535789}
   - component: {fileID: 526594347195509533}
   - component: {fileID: 3501832611143498907}
+  - component: {fileID: 5250645374617020066}
   - component: {fileID: 7789758152506368368}
   m_Layer: 5
   m_Name: Art
@@ -115,6 +116,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.6802089, y: 2.0902245}
   m_EdgeRadius: 0
+--- !u!114 &5250645374617020066
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3113357246160387368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e3e400d8b4e714a499174192b8379479, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!95 &7789758152506368368
 Animator:
   serializedVersion: 3
